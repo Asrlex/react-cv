@@ -150,7 +150,7 @@ export const portfolioTranslations: PortfolioTranslations = {
         'Descargar CV en PDF',
         'Despliegue en Github Pages',
       ],
-      technologies: [TM.REACT, TM.TYPESCRIPT, TM.CSS, TM.GITHUB_PAGES],
+      technologies: [TM.REACT, TM.TYPESCRIPT, TM.CSS, TM.GITHUB_PAGES, TM.FRAMER_MOTION],
     },
     {
       id: ProjectsEnum.APH_SOAP,
