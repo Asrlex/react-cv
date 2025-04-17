@@ -16,7 +16,6 @@ import useThemeStore from './store/ThemeStore'
 const theme = useThemeStore.getState().theme;
 document.documentElement.className = theme;
 
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
