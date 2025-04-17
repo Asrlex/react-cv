@@ -11,11 +11,11 @@ const Description = () => {
 
   return (
     <CollapsibleSection title={translation.title} icon={<FaUser />}>
-      {translation.description.map((paragraph) => (
-        <>
+      {translation.description.map((paragraph, index) => (
+        <div key={index}>
           {paragraph}
           <br /><br />
-        </>
+        </div>
       ))}
     </CollapsibleSection>
   );

@@ -1,26 +1,25 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import React from 'react';
-import { LanguagesEnum } from './entities/components.enum';
+import { BASE_ASSET_DIR, LanguagesEnum } from './entities/components.enum';
 import '../style/css/languages.css';
 import tableStyle from '@/style/table-style';
 import CollapsibleSection from './togglers/CollapsibleSection';
 import useLangStore, { LangStore } from '@/store/LangStore';
-import languageTranslations from '@/translations/language.translation';
+import languageTranslations, { LanguageInformation } from '@/translations/language.translation';
 import { BiWorld } from "react-icons/bi";
 
 const Languages = () => {
   const language = useLangStore((state: LangStore) => state.language);
-  const translations = languageTranslations[language];
-  const { listening, reading, speaking, writing, conversation, native, legend, experience } = translations;
+  const translations: LanguageInformation = languageTranslations[language];
 
   const languages = [
     {
       name: LanguagesEnum.ES,
-      listening: native,
-      reading: native,
-      speaking: native,
-      writing: native,
-      interaction: native,
+      listening: translations.native,
+      reading: translations.native,
+      speaking: translations.native,
+      writing: translations.native,
+      interaction: translations.native,
     },
     {
       name: LanguagesEnum.EN,
@@ -64,19 +63,19 @@ const Languages = () => {
             <TableRow sx={tableStyle.tableRow}>
               <TableCell sx={tableStyle.tableHeaderCell} />
               <TableCell sx={tableStyle.tableHeaderCell}>
-                {listening}
+                {translations.listening}
               </TableCell>
               <TableCell sx={tableStyle.tableHeaderCell}>
-                {reading}
+                {translations.reading}
               </TableCell>
               <TableCell sx={tableStyle.tableHeaderCell}>
-                {speaking}
+                {translations.speaking}
               </TableCell>
               <TableCell sx={tableStyle.tableHeaderCell}>
-                {writing}
+                {translations.writing}
               </TableCell>
               <TableCell sx={tableStyle.tableHeaderCell}>
-                {conversation}
+                {translations.conversation}
               </TableCell>
             </TableRow>
           </TableHead>
@@ -86,7 +85,7 @@ const Languages = () => {
                 <TableCell>
                   <div className='langBubble'>
                     <img
-                      src={`/icons/languages/${language.name}.svg`}
+                      src={`${BASE_ASSET_DIR}/languages/${language.name}.svg`}
                       alt={language.name}
                     />
                   </div>
@@ -103,7 +102,7 @@ const Languages = () => {
       </TableContainer>
 
       <div className="languageLegend">
-        {legend.map((item, index) => (
+        {translations.legend.map((item, index: number) => (
           <div className="legendItem" key={index}>
             <div className="legendCircle"></div>
             <span>{item}</span>
@@ -111,11 +110,11 @@ const Languages = () => {
         ))}
       </div>
       <div className="languageExperience">
-        {experience.map((exp, index) => (
+        {translations.experience.map((exp, index: number) => (
           <div className='languageExperienceItem' key={index}>
             <div className='languageExperienceItemName'>{exp.language}</div>
             <ul>
-              {exp.experience.map((item, index) => (
+              {exp.experience.map((item, index: number) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>

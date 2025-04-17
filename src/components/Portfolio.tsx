@@ -5,7 +5,7 @@ import useLangStore, { LangStore } from '@/store/LangStore';
 import { portfolioTranslations, ProjectInformation } from '@/translations/portfolio.translation';
 import '../style/css/portfolio.css';
 import EmblaCarousel from './carousel/EmblaCarousel';
-import { Technology } from './entities/components.enum';
+import { BASE_ASSET_DIR, Technology } from './entities/components.enum';
 
 const Portfolio = () => {
   const language = useLangStore((state: LangStore) => state.language);
@@ -23,7 +23,7 @@ const Portfolio = () => {
       icon={<FaFolderOpen />}
     >
       {translations.map((project, index) => (
-        <div>
+        <div key={index}>
           <div className='portfolioSection' key={index} id={project.id}>
             <div className='sectionItemTitle'>
               {project.name}
@@ -54,7 +54,7 @@ const Portfolio = () => {
                     {tech.name}
                     {tech.icon && 
                       <img 
-                        src={`/icons/tools/${tech.icon}.svg`}
+                        src={`${BASE_ASSET_DIR}/tools/${tech.icon}.svg`}
                         alt={tech.name}
                         className='portfolioIcon'
                         title={tech.name}

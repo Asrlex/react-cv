@@ -4,6 +4,7 @@ import useLangStore, { LangStore } from '@/store/LangStore';
 import '../style/css/experience.css';
 import { FaBriefcase } from "react-icons/fa";
 import experienceTranslations from '@/translations/experience.translation';
+import { BASE_ASSET_DIR } from './entities/components.enum';
 
 const Experience = () => {
   const language = useLangStore((state: LangStore) => state.language);
@@ -19,7 +20,7 @@ const Experience = () => {
           <div className="experienceBody">
             <div className='experienceField'>
               <img
-                src={`/icons/companies/${job.icon}`}
+                src={`${BASE_ASSET_DIR}/companies/${job.icon}`}
                 alt={job.company}
                 className='experienceIcon'
               />

@@ -5,6 +5,7 @@ import useLangStore, { LangStore } from '@/store/LangStore';
 import { SkillInformation, skillsTranslations } from '@/translations/skills.translation';
 import '../style/css/skills.css';
 import { Link } from 'react-scroll';
+import { BASE_ASSET_DIR } from './entities/components.enum';
 
 const Skills = () => {
   const language = useLangStore((state: LangStore) => state.language);
@@ -23,7 +24,7 @@ const Skills = () => {
             <div className='sectionItemTitle'>
               {skill.icon && (
                 <img
-                  src={`/icons/tools/${skill.icon}`}
+                  src={`${BASE_ASSET_DIR}/tools/${skill.icon}`}
                   alt={skill.name}
                   className='skillsIcon'
                 />

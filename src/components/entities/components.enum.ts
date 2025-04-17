@@ -20,6 +20,8 @@ export enum LanguagesEnum {
   C2 = 'C2',
 }
 
+export const BASE_ASSET_DIR = '/react-cv/icons';
+
 export enum ProjectsEnum {
   APH_CONTROL_TOWER = 'control-tower-project',
   APH_DATA_MASTERS = 'data-masters-project',
