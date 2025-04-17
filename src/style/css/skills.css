@@ -1,0 +1,48 @@
+@import '../global/variables.css';
+@import '../global/animations.css';
+
+.skillsSection {
+  padding-bottom: 2rem;
+}
+
+.skillsIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .5rem;
+  border-radius: 50%;
+}
+
+.skillsBody {
+  padding-left: 3rem;
+  padding-right: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.skillsProject {
+  display: inline-block;
+}
+
+.skillsReference {
+  font-size: var(--font-size-xsmall);
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--link-color);
+}
+
+@media screen and (max-width: 768px) {
+  .skillsBody {
+    padding-left: 1.5rem;
+    padding-right: .5rem;
+  }
+  .skillsField {
+    margin-bottom: .3rem;
+  }
+  
+  .skillsSection {
+    padding-bottom: 0.5rem;
+  }
+
+  .skillsReference {
+    font-size: var(--font-size-xsmall);
+  }
+}

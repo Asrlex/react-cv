@@ -1,0 +1,45 @@
+import React from 'react';
+import CollapsibleSection from './togglers/CollapsibleSection';
+import useLangStore, { LangStore } from '@/store/LangStore';
+import '../style/css/experience.css';
+import { FaBriefcase } from "react-icons/fa";
+import experienceTranslations from '@/translations/experience.translation';
+
+const Experience = () => {
+  const language = useLangStore((state: LangStore) => state.language);
+  const translations = experienceTranslations[language];
+
+  return (
+    <CollapsibleSection title={translations.title} icon={<FaBriefcase />}>
+      {translations.experiences.map((job, index) => (
+        <div className='experienceSection' key={index}>
+          <div className='sectionItemTitle'>
+            {job.position}
+          </div>
+          <div className="experienceBody">
+            <div className='experienceField'>
+              <img
+                src={`/icons/companies/${job.icon}`}
+                alt={job.company}
+                className='experienceIcon'
+              />
+              {job.company}
+            </div>
+            <div className='experienceField'>{job.location}</div>
+            <div className='experienceField'>
+              {job.dateStart} - {job.dateEnd}
+            </div>
+            <div className='experienceField'>{job.description}</div>
+            <ul>
+              {job.tasks.map((task: string, index: number) => (
+                <li key={index}>{task}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </CollapsibleSection>
+  );
+};
+
+export default Experience;

@@ -1,0 +1,36 @@
+@import '../global/variables.css';
+@import '../global/animations.css';
+
+.experienceSection {
+  padding-bottom: 2rem;
+}
+
+.experienceBody {
+  padding-left: 3rem;
+}
+
+.experienceField {
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.experienceIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .5rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .experienceBody {
+    padding-left: 1.5rem;
+  }
+  .experienceField {
+    margin-bottom: .3rem;
+  }
+
+  .experienceSection {
+    padding-bottom: 1rem;
+  }
+}

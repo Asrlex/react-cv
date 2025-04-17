@@ -1,0 +1,8 @@
+@import '../global/variables.css';
+@import '../global/animations.css';
+
+.formationBody {
+  padding-left: 2rem;
+  padding-right: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}

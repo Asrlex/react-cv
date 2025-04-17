@@ -1,0 +1,65 @@
+@import '../global/variables.css';
+@import '../global/animations.css';
+
+.portfolioSection {
+  padding-bottom: 2rem;
+}
+
+.portfolioBody {
+  padding-left: 3rem;
+  padding-right: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.portfolioTechnology {
+  font-size: var(--font-size-xsmall);
+  font-weight: 700;
+  cursor: default;
+  color: var(--link-color);
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .2rem .5rem;
+}
+
+.portfolioIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: .25rem;
+  border-radius: 50%;
+}
+
+.portfolioTechnologies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolioBody {
+    padding-left: 1.5rem;
+    padding-right: .5rem;
+  }
+  .portfolioField {
+    margin-bottom: .3rem;
+  }
+
+  .portfolioSection {
+    padding-bottom: 0.5rem;
+  }
+
+  .portfolioTechnology {
+    font-size: var(--font-size-xsmall);
+  }
+  
+  .portfolioIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .portfolioTechnology {
+    margin-right: .5rem;
+  }
+}

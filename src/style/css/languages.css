@@ -1,0 +1,67 @@
+@import '../global/variables.css';
+@import '../global/animations.css';
+
+.langBubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.langBubble img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.languageLegend {
+  font-size: var(--font-size-xsmall);
+}
+
+.languageExperience {
+  margin-top: 0.5rem;
+  font-size: var(--font-size-xsmall);
+  font-weight: 500;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 0.5rem;
+}
+
+.languageExperienceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 0.5rem;
+}
+
+.languageExperienceItem {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .langBubble {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .langBubble {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .languageLegend {
+    display: none;
+  }
+
+  .languageExperienceItem {
+    gap: 0;
+  }
+}
