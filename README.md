@@ -1,54 +1,106 @@
-# React + TypeScript + Vite
+# React CV Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern, interactive CV built with React, TypeScript, and Vite. It showcases professional experience, skills, projects, and more in a visually appealing and responsive design. The application includes advanced features such as theme and language togglers, PDF download functionality, custom image carousels, and animations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Features
 
-## Expanding the ESLint configuration
+- **Theme Toggler**: Switch between light and dark themes seamlessly.
+- **Language Toggler**: Supports multiple languages (e.g., English, Spanish, German) with translations for all sections.
+- **PDF Download**: Download the CV as a PDF directly from the interface.
+- **Custom Image Carousels**: Interactive carousels for showcasing project images using `embla-carousel-react`.
+- **Responsive Design**: Fully responsive layout optimized for desktop and mobile devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Styling and Animations
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **CSS Styling**: Custom styles using CSS modules and global variables for consistent theming.
+- **Framer Motion Animations**: Smooth animations for transitions and interactions.
+- **Hover Effects**: Interactive hover effects for buttons, icons, and links.
+
+### State Management
+
+- **Zustand**: Lightweight state management for theme and language toggling.
+
+### Project Highlights
+
+- **Portfolio Section**: Displays projects with descriptions, features, technologies, and image galleries.
+- **Skills Section**: Lists skills with levels, experience, and associated projects.
+- **Experience Section**: Highlights professional experience with roles, tasks, and company details.
+- **Languages Section**: Showcases language proficiency with visual indicators.
+
+## Technologies Used
+
+- **React**: Component-based UI development.
+- **TypeScript**: Strongly typed JavaScript for better code quality.
+- **Vite**: Fast build tool for modern web projects.
+- **Zustand**: State management for theme and language toggling.
+- **Framer Motion**: Animations and transitions.
+- **Embla Carousel**: Customizable image carousels.
+- **CSS and TailwindCSS**: Styling and responsive design.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/asrlex/react-cv.git
+   cd react-cv
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the application in your browser at `http://localhost:5173`.
+
+## Scripts
+
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project for production.
+- `npm run preview`: Preview the production build.
+- `npm run deploy`: Deploy the project to GitHub Pages.
+- `npm run lint`: Run ESLint to check for code quality issues.
+
+## Project Structure
+
+``` plaintext
+src/
+├── components/         # React components (e.g., AboutMe, Skills, Portfolio)
+├── store/              # Zustand stores for theme and language
+├── style/              # CSS styles and global variables
+├── translations/       # Language translations for multilingual support
+├── assets/             # Static assets like images and icons
+├── App.tsx             # Main application component
+├── main.tsx            # Entry point for the React app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Deployment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project is deployed on GitHub Pages. To deploy:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Run `npm run build` to generate the production build.
+2. Run `npm run deploy` to publish the `dist` folder to GitHub Pages.
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Embla Carousel](https://www.embla-carousel.com/) for the custom carousels.
+- [Framer Motion](https://www.framer.com/motion/) for animations.
+- [Zustand](https://zustand-demo.pmnd.rs/) for state management.
+- [React Icons](https://react-icons.github.io/react-icons/) for icons.
