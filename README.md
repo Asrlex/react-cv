@@ -9,7 +9,7 @@ This project is a modern, interactive CV built with React, TypeScript, and Vite.
 - **Theme Toggler**: Switch between light and dark themes seamlessly.
 - **Language Toggler**: Supports multiple languages (e.g., English, Spanish, German) with translations for all sections.
 - **PDF Download**: Download the CV as a PDF directly from the interface.
-- **Custom Image Carousels**: Interactive carousels for showcasing project images using `embla-carousel-react`.
+- **Custom Image Carousels**: Interactive carousels for showcasing project images using `embla-carousel-react` and `react-photo-view`.
 - **Responsive Design**: Fully responsive layout optimized for desktop and mobile devices.
 
 ### Styling and Animations
@@ -101,6 +101,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 
 - [Embla Carousel](https://www.embla-carousel.com/) for the custom carousels.
+- [React Photo View](https://react-photo-view.vercel.app/en-US) for the image viewer.
 - [Framer Motion](https://www.framer.com/motion/) for animations.
 - [Zustand](https://zustand-demo.pmnd.rs/) for state management.
 - [React Icons](https://react-icons.github.io/react-icons/) for icons.

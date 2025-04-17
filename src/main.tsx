@@ -12,6 +12,7 @@ import '@fontsource/roboto/800.css';
 import '@fontsource/roboto/900.css';
 import React from 'react'
 import useThemeStore from './store/ThemeStore'
+import 'react-photo-view/dist/react-photo-view.css';
 
 const theme = useThemeStore.getState().theme;
 document.documentElement.className = theme;
