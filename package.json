@@ -2,8 +2,15 @@
   "homepage": "https://asrlex.github.io/react-cv",
   "name": "react-cv",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Alex Sanchez. <alexsruc@hotmail.com>",
+  "description": "A modern CV built with React and Vite.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asrlex/react-cv.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
