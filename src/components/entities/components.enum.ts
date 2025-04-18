@@ -81,6 +81,10 @@ export const TechnologiesMaster = {
     name: 'TypeScript',
     icon: 'typescript'
   },
+  JEST: {
+    name: 'Jest',
+    icon: 'jest'
+  },
   KAFKA: {
     name: 'Kafka',
     icon: 'kafka'

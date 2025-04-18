@@ -34,9 +34,10 @@ export const portfolioTranslations: PortfolioTranslations = {
         'Gestión de usuarios y permisos mediante AWS Cognito',
         'Gestión de caché mediante Redis',
         'Documentación de API mediante Swagger',
+        'Tests unitarios y de integración con Jest',
         'Despliegue en AWS ECS mediante Docker con GitLab CI/CD',
       ],
-      technologies: [TM.NESTJS, TM.KAFKA, TM.ORACLEDB, TM.SQLSERVER, TM.AWS_COGNITO, TM.AWS_ECS, TM.JWT, TM.REDIS, TM.SWAGGER, TM.TYPESCRIPT, TM.GITLAB_CI, TM.DOCKER],
+      technologies: [TM.NESTJS, TM.KAFKA, TM.ORACLEDB, TM.SQLSERVER, TM.AWS_COGNITO, TM.AWS_ECS, TM.JWT, TM.REDIS, TM.SWAGGER, TM.TYPESCRIPT, TM.GITLAB_CI, TM.DOCKER, TM.JEST],
     },
     {
       id: ProjectsEnum.APH_DATA_MASTERS,
@@ -353,9 +354,10 @@ export const portfolioTranslations: PortfolioTranslations = {
         'Cambio de tema',
         'Cambio de idioma',
         'Descargar CV en PDF',
+        'Tests unitarios y de integración con Jest',
         'Despliegue en Github Pages',
       ],
-      technologies: [TM.REACT, TM.TYPESCRIPT, TM.CSS, TM.GITHUB_PAGES],
+      technologies: [TM.REACT, TM.TYPESCRIPT, TM.CSS, TM.GITHUB_PAGES, TM.FRAMER_MOTION, TM.JEST],
     },
     {
       id: ProjectsEnum.APH_SOAP,
