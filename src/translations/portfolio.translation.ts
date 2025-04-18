@@ -145,6 +145,7 @@ export const portfolioTranslations: PortfolioTranslations = {
         'Gestión de idiomas',
         'Estado/contexto con Zustand',
         'Animaciones con Framer Motion',
+        'Lazy loading de imágenes',
         'Cambio de tema',
         'Cambio de idioma',
         'Descargar CV en PDF',
