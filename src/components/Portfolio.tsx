@@ -4,7 +4,6 @@ import { FaFolderOpen } from "react-icons/fa";
 import useLangStore, { LangStore } from '@/store/LangStore';
 import { portfolioTranslations, ProjectInformation } from '@/translations/portfolio.translation';
 import '../style/css/portfolio.css';
-import EmblaCarousel from './carousel/EmblaCarousel';
 import { BASE_ASSET_DIR, Technology } from './entities/components.enum';
 
 const LazyEmblaCarousel = React.lazy(() => import('./carousel/EmblaCarousel'));
