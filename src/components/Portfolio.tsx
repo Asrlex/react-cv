@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import CollapsibleSection from './togglers/CollapsibleSection';
 import { FaFolderOpen } from "react-icons/fa";
 import useLangStore, { LangStore } from '@/store/LangStore';
@@ -7,10 +7,12 @@ import '../style/css/portfolio.css';
 import EmblaCarousel from './carousel/EmblaCarousel';
 import { BASE_ASSET_DIR, Technology } from './entities/components.enum';
 
+const LazyEmblaCarousel = React.lazy(() => import('./carousel/EmblaCarousel'));
+
 const Portfolio = () => {
   const language = useLangStore((state: LangStore) => state.language);
   const translations: ProjectInformation[] = portfolioTranslations[language];
-  
+
   const emblaOptions = {
     loop: true,
     draggable: true,
@@ -52,8 +54,8 @@ const Portfolio = () => {
                 {project.technologies.map((tech: Technology, index: number) => (
                   <span key={index} className='portfolioTechnology'>
                     {tech.name}
-                    {tech.icon && 
-                      <img 
+                    {tech.icon &&
+                      <img
                         src={`${BASE_ASSET_DIR}/tools/${tech.icon}.svg`}
                         alt={tech.name}
                         className='portfolioIcon'
@@ -64,7 +66,9 @@ const Portfolio = () => {
                 ))}
               </div>
               {project.images && <div className='portfolioImages'>
-                <EmblaCarousel slides={project.images} options={emblaOptions}/>
+                <Suspense fallback={<div>Loading carousel...</div>}>
+                  <LazyEmblaCarousel slides={project.images} options={emblaOptions} />
+                </Suspense>
               </div>}
             </div>
           </div>
