@@ -2,15 +2,16 @@ import React, { Suspense } from 'react';
 import CollapsibleSection from './togglers/CollapsibleSection';
 import { FaFolderOpen } from "react-icons/fa";
 import useLangStore, { LangStore } from '@/store/LangStore';
-import { portfolioTranslations, ProjectInformation } from '@/translations/portfolio.translation';
+import { ProjectInformation } from '@/translations/portfolio.translation';
 import '../style/css/portfolio.css';
 import { BASE_ASSET_DIR, Technology } from './entities/components.enum';
+import { getPortfolioTranslations } from '@/translations/base.translation';
 
 const LazyEmblaCarousel = React.lazy(() => import('./carousel/EmblaCarousel'));
 
 const Portfolio = () => {
   const language = useLangStore((state: LangStore) => state.language);
-  const translations: ProjectInformation[] = portfolioTranslations[language];
+  const translations: ProjectInformation[] = getPortfolioTranslations(language);
 
   const emblaOptions = {
     loop: true,

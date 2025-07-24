@@ -2,17 +2,18 @@ import React from 'react';
 import CollapsibleSection from './togglers/CollapsibleSection';
 import { FaTools } from "react-icons/fa";
 import useLangStore, { LangStore } from '@/store/LangStore';
-import { SkillInformation, skillsTranslations } from '@/translations/skills.translation';
+import { SkillInformation } from '@/translations/skills.translation';
 import '../style/css/skills.css';
 import { Link } from 'react-scroll';
 import { BASE_ASSET_DIR } from './entities/components.enum';
+import { getSkillsTranslations } from '@/translations/base.translation';
 
 const Skills = () => {
   const language = useLangStore((state: LangStore) => state.language);
   const translations: {
     title: string;
     skills: SkillInformation[];
-  } = skillsTranslations[language];
+  } = getSkillsTranslations(language);
 
   return (
     <CollapsibleSection title={translations.title}

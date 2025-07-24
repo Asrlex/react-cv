@@ -1,4 +1,4 @@
-export interface FormationInformation {
+export interface EducationInformation {
   formation: string;
   date: string;
   location?: string;
@@ -6,22 +6,22 @@ export interface FormationInformation {
   description: string;
 }
 
-interface FormationTranslations {
+export interface EducationTranslations {
   es: {
     title: string;
-    formations: FormationInformation[];
+    formations: EducationInformation[];
   },
   en: {
     title: string;
-    formations: FormationInformation[];
+    formations: EducationInformation[];
   },
   de: {
     title: string;
-    formations: FormationInformation[];
+    formations: EducationInformation[];
   },
 }
 
-export const formationTranslations: FormationTranslations = {
+export const educationTranslations: EducationTranslations = {
   es: {
     title: "Formación",
     formations: [

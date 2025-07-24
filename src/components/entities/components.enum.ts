@@ -3,21 +3,31 @@ export enum BaseEnum {
   BASE_ANIMATION_EASE = 'easeInOut',
 }
 
-export enum LanguagesEnum {
-  // ISO 639-1 language codes
+export enum LangEnum {
   EN = 'en',
   ES = 'es',
-  FR = 'fr',
   DE = 'de',
+  FR = 'fr',
   IT = 'it',
+}
 
-  // Levels of proficiency
+export enum LangLevelEnum {
+  NATIVE = 'native',
   A1 = 'A1',
   A2 = 'A2',
   B1 = 'B1',
   B2 = 'B2',
   C1 = 'C1',
   C2 = 'C2',
+}
+
+export enum SectionEnum {
+  PORTFOLIO = 'portfolio',
+  EXPERIENCE = 'experience',
+  FORMATION = 'formation',
+  LANGUAGES = 'languages',
+  SKILLS = 'skills',
+  ABOUT_ME = 'about-me',
 }
 
 export const BASE_ASSET_DIR = '/react-cv/icons';

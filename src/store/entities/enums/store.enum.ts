@@ -12,7 +12,4 @@ export enum StoreEnum {
 
   // Language
   LANGUAGE = 'language',
-  EN = 'en',
-  ES = 'es',
-  DE = 'de',
 }

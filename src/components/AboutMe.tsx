@@ -1,13 +1,14 @@
 import React from 'react';
 import useLangStore, { LangStore } from '@/store/LangStore';
-import abouMeTranslations, { AboutMeInformation } from '@/translations/aboutme.translation';
+import { AboutMeInformation } from '@/translations/aboutme.translation';
 import '../style/css/aboutme.css';
 import { FaAws, FaMapPin } from "react-icons/fa";
 import { SiApachekafka, SiNestjs, SiPostgresql, SiPython, SiReact, SiTypescript } from "react-icons/si";
+import { getAboutMeTranslations } from '@/translations/base.translation';
 
 const AboutMe = () => {
   const language = useLangStore((state: LangStore) => state.language);
-  const translation: AboutMeInformation = abouMeTranslations[language];
+  const translation: AboutMeInformation = getAboutMeTranslations(language);
 
   return (
     <div className="aboutMe">

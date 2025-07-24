@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useLangStore, { LangStore } from '../../store/LangStore';
-import { StoreEnum } from '../../store/entities/enums/store.enum';
 import React from 'react';
+import { LangEnum } from '../entities/components.enum';
 
 const LangToggle = () => {
   const language = useLangStore((state: LangStore) => state.language);
@@ -21,9 +21,9 @@ const LangToggle = () => {
       onClick={handleClick}
       className={`langToggler ${language.toLowerCase()} ${animate ? 'animate' : ''}`}
       title={
-        language === StoreEnum.EN
+        language === LangEnum.EN
           ? 'English'
-          : language === StoreEnum.ES
+          : language === LangEnum.ES
             ? 'Español'
             : 'Deutsch'
       }

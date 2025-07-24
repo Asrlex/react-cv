@@ -1,6 +1,6 @@
 import React from "react";
 import CollapsibleSection from "./togglers/CollapsibleSection";
-import { FormationInformation, formationTranslations } from "@/translations/formation.translation";
+import { EducationInformation, educationTranslations } from "@/translations/education.translation";
 import useLangStore, { LangStore } from "@/store/LangStore";
 import { IoSchoolSharp } from "react-icons/io5";
 import "../style/css/formation.css";
@@ -9,8 +9,8 @@ function Formation() {
   const language = useLangStore((state: LangStore) => state.language);
   const translations: {
     title: string;
-    formations: FormationInformation[];
-  } = formationTranslations[language];
+    formations: EducationInformation[];
+  } = educationTranslations[language];
 
   return (
     <CollapsibleSection

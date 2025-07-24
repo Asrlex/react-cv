@@ -1,4 +1,4 @@
-export interface JobInformation {
+export interface ExperienceInformation {
   position: string;
   icon?: string;
   company: string;
@@ -12,19 +12,19 @@ export interface JobInformation {
 interface ExperienceTranslations {
   es: {
     title: string;
-    experiences: JobInformation[];
+    experiences: ExperienceInformation[];
   },
   en: {
     title: string;
-    experiences: JobInformation[];
+    experiences: ExperienceInformation[];
   },
   de: {
     title: string;
-    experiences: JobInformation[];
+    experiences: ExperienceInformation[];
   },
 }
 
-const experienceTranslations: ExperienceTranslations = {
+export const experienceTranslations: ExperienceTranslations = {
   es: {
     title: 'Experiencia',
     experiences: [
@@ -146,5 +146,3 @@ const experienceTranslations: ExperienceTranslations = {
     ]
   },
 };
-
-export default experienceTranslations;

@@ -30,6 +30,7 @@ export const portfolioTranslations: PortfolioTranslations = {
         'Patrón repositorio para gestión de datos',
         'Sirve a múltiples sistemas de gestión de almacenes',
         'Gestión de conexiones persistentes a múltiples sistemas de bases de datos diferentes',
+        'Gestión de queries SQL con QueryBuilder personalizado',
         'Integración con pipeline de mensajería (Kafka) para recibir y enviar eventos',
         'Gestión de usuarios y permisos mediante AWS Cognito',
         'Gestión de caché mediante Redis',
@@ -93,6 +94,9 @@ export const portfolioTranslations: PortfolioTranslations = {
         'Estilos con CSS y TailwindCSS',
         'Despliegue en Raspberry Pi con nginx',
         'Documentación de API mediante Swagger',
+        'Auth mediante JWT o biometría',
+        'Control por voz mediante Web Speech API',
+        'Soporte de PWA',
       ],
       technologies: [TM.REACT, TM.JWT, TM.NGINX, TM.CSS, TM.TYPESCRIPT, TM.RASPI, TM.TAILWIND, TM.FRAMER_MOTION, TM.RASPI],
       images: [

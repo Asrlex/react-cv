@@ -1,6 +1,6 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import React from 'react';
-import { BASE_ASSET_DIR, LanguagesEnum } from './entities/components.enum';
+import { BASE_ASSET_DIR, LangEnum, LangLevelEnum } from './entities/components.enum';
 import '../style/css/languages.css';
 import tableStyle from '@/style/table-style';
 import CollapsibleSection from './togglers/CollapsibleSection';
@@ -14,7 +14,7 @@ const Languages = () => {
 
   const languages = [
     {
-      name: LanguagesEnum.ES,
+      name: LangEnum.ES,
       listening: translations.native,
       reading: translations.native,
       speaking: translations.native,
@@ -22,36 +22,36 @@ const Languages = () => {
       interaction: translations.native,
     },
     {
-      name: LanguagesEnum.EN,
-      listening: LanguagesEnum.C2,
-      reading: LanguagesEnum.C2,
-      speaking: LanguagesEnum.C2,
-      writing: LanguagesEnum.C2,
-      interaction: LanguagesEnum.C2,
+      name: LangEnum.EN,
+      listening: LangLevelEnum.C2,
+      reading: LangLevelEnum.C2,
+      speaking: LangLevelEnum.C2,
+      writing: LangLevelEnum.C2,
+      interaction: LangLevelEnum.C2,
     },
     {
-      name: LanguagesEnum.DE,
-      listening: LanguagesEnum.B2,
-      reading: LanguagesEnum.B2,
-      speaking: LanguagesEnum.C1,
-      writing: LanguagesEnum.C1,
-      interaction: LanguagesEnum.B2,
+      name: LangEnum.DE,
+      listening: LangLevelEnum.B2,
+      reading: LangLevelEnum.B2,
+      speaking: LangLevelEnum.C1,
+      writing: LangLevelEnum.C1,
+      interaction: LangLevelEnum.B2,
     },
     {
-      name: LanguagesEnum.FR,
-      listening: LanguagesEnum.B1,
-      reading: LanguagesEnum.B1,
-      speaking: LanguagesEnum.B1,
-      writing: LanguagesEnum.B1,
-      interaction: LanguagesEnum.B1,
+      name: LangEnum.FR,
+      listening: LangLevelEnum.B1,
+      reading: LangLevelEnum.B1,
+      speaking: LangLevelEnum.B1,
+      writing: LangLevelEnum.B1,
+      interaction: LangLevelEnum.B1,
     },
     {
-      name: LanguagesEnum.IT,
-      listening: LanguagesEnum.A2,
-      reading: LanguagesEnum.A2,
-      speaking: LanguagesEnum.A2,
-      writing: LanguagesEnum.A2,
-      interaction: LanguagesEnum.A2,
+      name: LangEnum.IT,
+      listening: LangLevelEnum.A2,
+      reading: LangLevelEnum.A2,
+      speaking: LangLevelEnum.A2,
+      writing: LangLevelEnum.A2,
+      interaction: LangLevelEnum.A2,
     },
   ];
 
