@@ -1,4 +1,4 @@
-import { BaseEnum } from "@/components/entities/components.enum";
+import { BaseEnum } from "@/entities/components.enum";
 
 const tableStyle = {
   table: {

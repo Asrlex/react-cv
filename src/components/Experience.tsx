@@ -3,9 +3,9 @@ import CollapsibleSection from './togglers/CollapsibleSection';
 import useLangStore, { LangStore } from '@/store/LangStore';
 import '../style/css/experience.css';
 import { FaBriefcase } from "react-icons/fa";
-import { BASE_ASSET_DIR } from './entities/components.enum';
+import { BASE_ASSET_DIR } from '../entities/components.enum';
 import { getExperienceTranslations } from '@/translations/base.translation';
-import { ExperienceInformation } from '@/translations/experience.translation';
+import { ExperienceInformation } from '@/translations/experience/experience.translation';
 
 const Experience = () => {
   const language = useLangStore((state: LangStore) => state.language);

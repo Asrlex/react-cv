@@ -1,11 +1,11 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import React from 'react';
-import { BASE_ASSET_DIR, LangEnum, LangLevelEnum } from './entities/components.enum';
+import { BASE_ASSET_DIR, LangEnum, LangLevelEnum } from '../entities/components.enum';
 import '../style/css/languages.css';
 import tableStyle from '@/style/table-style';
 import CollapsibleSection from './togglers/CollapsibleSection';
 import useLangStore, { LangStore } from '@/store/LangStore';
-import languageTranslations, { LanguageInformation } from '@/translations/language.translation';
+import languageTranslations, { LanguageInformation } from '@/translations/languages/language.translation';
 import { BiWorld } from "react-icons/bi";
 
 const Languages = () => {

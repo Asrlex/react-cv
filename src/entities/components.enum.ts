@@ -36,6 +36,7 @@ export enum ProjectsEnum {
   APH_CONTROL_TOWER = 'control-tower-project',
   APH_DATA_MASTERS = 'data-masters-project',
   APH_CLIENT_PORTAL = 'client-portal-project',
+  APH_REST_APIS = 'rest-apis-project',
   APH_SERVERLESS = 'serverless-project',
   APH_DOCVAULT = 'docvault-project',
   APH_SOAP = 'soap-project',

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowUp } from "react-icons/fa";
-import { BaseEnum } from '../entities/components.enum';
+import { BaseEnum } from '../../entities/components.enum';
 
 interface CollapsibleSectionProps {
   title: string;

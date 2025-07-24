@@ -2,9 +2,9 @@ import React, { Suspense } from 'react';
 import CollapsibleSection from './togglers/CollapsibleSection';
 import { FaFolderOpen } from "react-icons/fa";
 import useLangStore, { LangStore } from '@/store/LangStore';
-import { ProjectInformation } from '@/translations/portfolio.translation';
+import { ProjectInformation } from '@/translations/portfolio/portfolio.translation';
 import '../style/css/portfolio.css';
-import { BASE_ASSET_DIR, Technology } from './entities/components.enum';
+import { BASE_ASSET_DIR, Technology } from '../entities/components.enum';
 import { getPortfolioTranslations } from '@/translations/base.translation';
 
 const LazyEmblaCarousel = React.lazy(() => import('./carousel/EmblaCarousel'));

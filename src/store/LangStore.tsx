@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { StoreEnum } from './entities/enums/store.enum';
-import { LangEnum } from '@/components/entities/components.enum';
+import { LangEnum } from '@/entities/components.enum';
 
 export interface LangStore {
   language: LangEnum;

@@ -1,6 +1,6 @@
 import React from 'react';
 import useLangStore, { LangStore } from '@/store/LangStore';
-import { AboutMeInformation } from '@/translations/aboutme.translation';
+import { AboutMeInformation } from '@/translations/aboutme/aboutme.translation';
 import '../style/css/aboutme.css';
 import { FaAws, FaMapPin } from "react-icons/fa";
 import { SiApachekafka, SiNestjs, SiPostgresql, SiPython, SiReact, SiTypescript } from "react-icons/si";

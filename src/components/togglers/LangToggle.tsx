@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useLangStore, { LangStore } from '../../store/LangStore';
 import React from 'react';
-import { LangEnum } from '../entities/components.enum';
+import { LangEnum } from '../../entities/components.enum';
 
 const LangToggle = () => {
   const language = useLangStore((state: LangStore) => state.language);

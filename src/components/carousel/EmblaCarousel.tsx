@@ -7,7 +7,7 @@ import {
 } from './EmblaCarouselArrowButtons'
 import useEmblaCarousel from 'embla-carousel-react'
 import './css/embla.css'
-import { BASE_ASSET_DIR } from '../entities/components.enum'
+import { BASE_ASSET_DIR } from '../../entities/components.enum'
 import { PhotoProvider, PhotoView } from 'react-photo-view'
 
 type PropType = {

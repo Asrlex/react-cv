@@ -1,6 +1,6 @@
 import React from "react";
 import CollapsibleSection from "./togglers/CollapsibleSection";
-import { EducationInformation, educationTranslations } from "@/translations/education.translation";
+import { EducationInformation, educationTranslations } from "@/translations/education/education.translation";
 import useLangStore, { LangStore } from "@/store/LangStore";
 import { IoSchoolSharp } from "react-icons/io5";
 import "../style/css/formation.css";

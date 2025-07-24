@@ -1,10 +1,10 @@
-import { LangEnum } from "@/components/entities/components.enum";
-import { portfolioTranslations, ProjectInformation } from "./portfolio.translation";
-import abouMeTranslations, { AboutMeInformation } from "./aboutme.translation";
-import { skillsTranslations } from "./skills.translation";
-import languageTranslations, { LanguageInformation } from "./language.translation";
-import { educationTranslations } from "./education.translation";
-import { experienceTranslations } from "./experience.translation";
+import { LangEnum } from "@/entities/components.enum";
+import { portfolioTranslations, ProjectInformation } from "./portfolio/portfolio.translation";
+import aboutMeTranslations, { AboutMeInformation } from "./aboutme/aboutme.translation";
+import { skillsTranslations } from "./skills/skills.translation";
+import languageTranslations, { LanguageInformation } from "./languages/language.translation";
+import { educationTranslations } from "./education/education.translation";
+import { experienceTranslations } from "./experience/experience.translation";
 
 export type Language = LangEnum.ES | LangEnum.EN | LangEnum.DE | LangEnum.FR | LangEnum.IT;
 
@@ -15,7 +15,7 @@ export const getPortfolioTranslations = (language: Language): ProjectInformation
 };
 
 export const getAboutMeTranslations = (language: Language): AboutMeInformation => {
-  return abouMeTranslations[language] || abouMeTranslations[LangEnum.ES];
+  return aboutMeTranslations[language] || aboutMeTranslations[LangEnum.ES];
 };
 
 export const getSkillsTranslations = (language: Language) => {
