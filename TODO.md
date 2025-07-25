@@ -1,2 +1,0 @@
-- [ ] Translate skills to German
-- [ ] Update Airpharm REST APIs project
