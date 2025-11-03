@@ -5,51 +5,51 @@ const skillsDe: {
   title: string;
   skills: SkillInformation[];
 } = {
-  title: 'Skills',
+  title: 'Fähigkeiten',
   skills: [
     {
-      name: 'General',
-      description: 'Development experience since 2018.',
-      level: 'Advanced',
-      experience: 'Since 2018',
+      name: 'Allgemein',
+      description: 'Entwicklungserfahrung seit 2018.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2018',
       bulletPoints: [
-        'High standards and discipline in documenting and structuring projects and documentation.',
-        'Following best practices and styles.',
-        'Use of version control and project management tools.',
+        'Hohe Standards und Disziplin bei der Dokumentation und Strukturierung von Projekten und Dokumentationen.',
+        'Befolgung von Best Practices und Stilen.',
+        'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
       ],
     },
     {
       name: 'Node.js - Backend',
       icon: 'nest.svg',
-      description: 'Development of REST APIs and microservices with NestJS.',
-      level: 'Advanced',
-      experience: 'Since 2020',
+      description: 'Entwicklung von REST APIs und Microservices mit NestJS.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2020',
       bulletPoints: [
-        'Development of REST APIs and microservices.',
-        'Integration with SQL and NoSQL databases.',
-        'Implementation of authentication and authorization.',
-        'Integration with cloud environments and third-party services.',
-        'Use of version control and project management tools.',
+        'Entwicklung von REST APIs und Microservices.',
+        'Integration mit SQL- und NoSQL-Datenbanken.',
+        'Implementierung von Authentifizierung und Autorisierung.',
+        'Integration mit Cloud-Umgebungen und Drittanbieterdiensten.',
+        'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - Airpharm',
-          description: 'Global REST API for managing data masters and warehouse control (stock, orders, and transport) with SQLServer and OracleDB.',
+          description: 'REST API global für die Verwaltung von Datenmeistern und Lagerkontrolle (Bestand, Bestellungen und Transport) mit SQLServer und OracleDB.',
           references: [
             ProjectsEnum.APH_CONTROL_TOWER,
           ],
         },
         {
           type: 'Professional - Airpharm',
-          description: 'Real-time notification microservice with AWS Lambda and Kafka.',
+          description: 'Echtzeit-Benachrichtigungs-Microservice mit AWS Lambda und Kafka.',
           references: [
             ProjectsEnum.APH_SERVERLESS,
           ],
         },
         {
           type: 'Professional - Airpharm',
-          description: 'Document management system with SQLServer, AWS S3, and Cognito.',
+          description: 'Dokumentenmanagementsystem mit SQLServer, AWS S3 und Cognito.',
           references: [
             ProjectsEnum.APH_DOCVAULT,
           ],
@@ -63,21 +63,21 @@ const skillsDe: {
         },
         {
           type: 'Professional - SVF',
-          description: 'REST API for managing insurance policies.',
+          description: 'REST API zur Verwaltung von Versicherungsverträgen.',
           references: [
             ProjectsEnum.SVF_INSURANCE,
           ],
         },
         {
           type: 'Personal',
-          description: 'REST API for managing the home (shopping, recipes, tasks, and finances) with PostgreSQL and SQLite, and authentication via JWT.',
+          description: 'REST API zur Verwaltung des Haushalts (Einkauf, Rezepte, Aufgaben und Finanzen) mit PostgreSQL und SQLite sowie Authentifizierung über JWT.',
           references: [
             ProjectsEnum.PERSONAL_HOME_MANAGEMENT,
           ],
         },
         {
           type: 'Personal',
-          description: 'REST API for documenting trips with Cloudinary, Mapbox, and SQLite.',
+          description: 'REST API zur Verwaltung von Reisen mit Cloudinary, Mapbox und SQLite.',
           references: [
             ProjectsEnum.PERSONAL_TRAVEL_JOURNAL,
           ],
@@ -87,61 +87,102 @@ const skillsDe: {
     {
       name: 'Node.js - Frontend',
       icon: 'react.svg',
-      description: 'Web application development with ReactTS and Angular.',
-      level: 'Intermediate',
-      experience: 'Since 2022',
+      description: 'Webanwendungsentwicklung mit ReactTS und Angular.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2022',
       bulletPoints: [
-        'Web application development with ReactTS and Angular.',
-        'Integration with REST APIs and microservices.',
-        'Implementation of authentication and authorization.',
-        'Use of version control and project management tools.',
+        'Webanwendungsentwicklung mit ReactTS und Angular.',
+        'Integration mit REST APIs und Microservices.',
+        'Implementierung von Authentifizierung und Autorisierung.',
+        'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - SVF',
-          description: 'Web application for managing insurance policies with ReactTS.',
+          description: 'Webanwendung zur Verwaltung von Versicherungsverträgen mit Angular.',
           references: [
             ProjectsEnum.APH_CLIENT_PORTAL,
           ],
         },
         {
           type: 'Personal',
-          description: 'Web application for managing the home (shopping, recipes, tasks, and finances) with ReactTS.',
+          description: 'Webanwendung zur Verwaltung des Haushalts (Einkauf, Rezepte, Aufgaben und Finanzen) mit ReactTS.',
           references: [
             ProjectsEnum.PERSONAL_HOME_MANAGEMENT,
           ],
         },
         {
           type: 'Professional - SVF',
-          description: 'Web application for managing insurance policies with ReactTS.',
+          description: 'Webanwendung zur Verwaltung von Versicherungsverträgen mit ReactTS.',
           references: [
             ProjectsEnum.SVF_INSURANCE,
           ],
         },
         {
           type: 'Personal',
-          description: 'Web application for documenting trips with ReactJS.',
+          description: 'Webanwendung zur Dokumentation von Reisen mit ReactJS.',
           references: [
             ProjectsEnum.PERSONAL_TRAVEL_JOURNAL,
           ],
         },
       ],
     },
+        {
+      name: 'Java - SpringBoot',
+      icon: 'java.svg',
+      description: 'Entwicklung von Microservices und Anwendungen in Java.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2018',
+      bulletPoints: [
+        'Microservices mit SpringBoot MVC und WebFlux.',
+        'REST APIs mit SpringBoot MVC.',
+        'Entwicklung von Anwendungen in Java.',
+        'Hibernate ORM.',
+      ],
+      projectsName: 'Projekte',
+      projects: [
+        {
+          type: 'Professional - APH',
+          description: 'Entwicklung von REST APIs und Microservices mit SpringBoot MVC.',
+          references: [
+            ProjectsEnum.APH_CLIENT_PORTAL,
+          ],
+        },
+        {
+          type: 'Personal',
+          description: 'Microservices-Cluster',
+          references: [
+            ProjectsEnum.PERSONAL_MS_CLUSTER,
+          ],
+        },
+        {
+          type: 'Professional - SVF',
+          description: 'Mitarbeiterverwaltungsanwendung, Betriebssteuerung und Hypothekenverwaltung mit JavaFX.',
+          references: [
+            ProjectsEnum.SVF_ABSENTISM,
+            ProjectsEnum.SVF_PORTAL,
+            ProjectsEnum.SVF_MORTGAGE,
+            ProjectsEnum.SVF_AGENDA,
+          ],
+        },
+      ],
+    },
+
     {
       name: 'SQL',
       icon: 'sql.svg',
-      description: 'Development of SQL scripts and queries and database design.',
-      level: 'Advanced',
-      experience: 'Since 2018',
+      description: 'Entwicklung von SQL-Skripten und Abfragen sowie Datenbankdesign.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2018',
       bulletPoints: [
-        'Development of SQL scripts and queries and database design.',
+        'Entwicklung von SQL-Skripten und Abfragen sowie Datenbankdesign.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - Airpharm',
-          description: 'Design and development of OracleDB and SQLServer databases.',
+          description: 'Design und Entwicklung von OracleDB- und SQLServer-Datenbanken.',
           references: [
             ProjectsEnum.APH_CONTROL_TOWER,
             ProjectsEnum.APH_DATA_MASTERS,
@@ -153,7 +194,7 @@ const skillsDe: {
         },
         {
           type: 'Professional - SVF',
-          description: 'Design and development of SQLServer databases.',
+          description: 'Design und Entwicklung von SQLServer-Datenbanken.',
           references: [
             ProjectsEnum.SVF_INSURANCE,
             ProjectsEnum.SVF_WEB_SCRAPING,
@@ -162,7 +203,7 @@ const skillsDe: {
         },
         {
           type: 'Personal',
-          description: 'Design and development of PostgreSQL and SQLite databases.',
+          description: 'Design und Entwicklung von PostgreSQL- und SQLite-Datenbanken.',
           references: [
             ProjectsEnum.PERSONAL_HOME_MANAGEMENT,
             ProjectsEnum.PERSONAL_TRAVEL_JOURNAL,
@@ -173,19 +214,19 @@ const skillsDe: {
     {
       name: 'Git',
       icon: 'git.svg',
-      description: 'Use of version control and project management tools.',
-      level: 'Advanced',
-      experience: 'Since 2018',
+      description: 'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2018',
       bulletPoints: [
-        'Use of version control and project management tools.',
+        'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
         'GitHub, GitLab.',
-        'Implementation of continuous deployment scripts with Gitlab CI/CD.',
+        'Implementierung von Continuous Deployment-Skripten mit Gitlab CI/CD.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - Airpharm',
-          description: 'Use of version control, project management, and continuous integration tools.',
+          description: 'Verwendung von Versionskontroll-, Projektmanagement- und Continuous Integration-Tools.',
           references: [
             ProjectsEnum.APH_CONTROL_TOWER,
             ProjectsEnum.APH_DATA_MASTERS,
@@ -197,29 +238,29 @@ const skillsDe: {
         },
         {
           type: 'Professional - SVF',
-          description: 'Use of version control and project management tools.',
+          description: 'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
         },
         {
           type: 'Personal',
-          description: 'Use of version control and project management tools.',
+          description: 'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
         },
       ],
     },
     {
       name: 'AWS',
       icon: 'aws.svg',
-      description: 'Use of Amazon Web Services tools.',
-      level: 'Advanced',
-      experience: 'Since 2024',
+      description: 'Verwendung von Amazon Web Services-Tools.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2024',
       bulletPoints: [
-        'Use of Amazon Web Services tools.',
+        'Verwendung von Amazon Web Services-Tools.',
         'AWS Lambda, S3, Cognito, ECS, Cloudwatch, API Gateway.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - Airpharm',
-          description: 'Deployment of web services on ECS.',
+          description: 'Deployment von Webdiensten auf ECS.',
           references: [
             ProjectsEnum.APH_CONTROL_TOWER,
             ProjectsEnum.APH_DOCVAULT,
@@ -229,14 +270,14 @@ const skillsDe: {
         },
         {
           type: 'Professional - Airpharm',
-          description: 'Serverless microservice on Lambda.',
+          description: 'Serverless-Microservice auf Lambda.',
           references: [
             ProjectsEnum.APH_SERVERLESS,
           ],
         },
         {
           type: 'Professional - Airpharm',
-          description: 'Document management system with integration with S3 and Cognito.',
+          description: 'Dokumentenmanagementsystem mit Integration von S3 und Cognito.',
           references: [
             ProjectsEnum.APH_CONTROL_TOWER,
             ProjectsEnum.APH_DOCVAULT,
@@ -249,18 +290,18 @@ const skillsDe: {
     {
       name: 'Docker',
       icon: 'docker.svg',
-      description: 'Use of containerization tools.',
-      level: 'Intermediate',
-      experience: 'Since 2024',
+      description: 'Verwendung von Containerisierungstools.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2024',
       bulletPoints: [
-        'Use of containerization tools.',
+        'Verwendung von Containerisierungstools.',
         'Docker, Docker Compose.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - Airpharm',
-          description: 'Containerization of web services.',
+          description: 'Containerisierung von Webdiensten.',
           references: [
             ProjectsEnum.APH_CONTROL_TOWER,
             ProjectsEnum.APH_DATA_MASTERS,
@@ -271,7 +312,7 @@ const skillsDe: {
         },
         {
           type: 'Professional - SVF',
-          description: 'Containerization of applications.',
+          description: 'Containerisierung von Anwendungen.',
           references: [
             ProjectsEnum.SVF_INSURANCE,
           ],
@@ -281,51 +322,51 @@ const skillsDe: {
     {
       name: 'Python',
       icon: 'python.svg',
-      description: 'Development of applications and scripts in Python.',
-      level: 'Intermediate',
-      experience: 'Since 2020',
+      description: 'Entwicklung von Anwendungen und Skripten in Python.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2020',
       bulletPoints: [
-        'Development of applications and scripts in Python.',
-        'Use of version control and project management tools.',
+        'Entwicklung von Anwendungen und Skripten in Python.',
+        'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - SVF',
-          description: 'Desktop application for managing gas tariffs for energy company with Tkinter.',
+          description: 'Desktop-Anwendung zur Verwaltung von Gastarifen für ein Energieunternehmen mit Tkinter.',
           references: [
             ProjectsEnum.SVF_ECOGAS,
           ],
         },
         {
           type: 'Professional - SVF',
-          description: 'File conversion scripts.',
+          description: 'Dateikonvertierungsskripte.',
         },
         {
           type: 'Professional - SVF',
-          description: 'Web scraping scripts to access client corporate websites.',
+          description: 'Web-Scraping-Skripte zum Zugriff auf die Unternehmenswebsites der Kunden.',
           references: [
             ProjectsEnum.SVF_WEB_SCRAPING,
           ],
         },
         {
           type: 'Professional - SVF',
-          description: 'Scripts for interacting with Sharepoint for uploading and downloading documents.',
+          description: 'Scripts zur Interaktion mit Sharepoint zum Hochladen und Herunterladen von Dokumenten.',
           references: [
             ProjectsEnum.SVF_SHAREPOINT,
           ],
         },
         {
           type: 'Professional - SVF',
-          description: 'Scripts for automating management tasks, packaging, and sending documents.',
+          description: 'Scripts zur Automatisierung von Verwaltungsaufgaben, Verpackung und Versand von Dokumenten.',
         },
         {
           type: 'Personal',
-          description: 'Excel data set manipulation scripts.',
+          description: 'Excel-Datensatzmanipulationsskripte.',
         },
         {
           type: 'Personal',
-          description: 'Small Python portfolio with scripts for various tasks.',
+          description: 'Kleines Python-Portfolio mit Skripten für verschiedene Aufgaben.',
           references: [
             ProjectsEnum.PERSONAL_PYTHON,
           ],
@@ -335,18 +376,18 @@ const skillsDe: {
     {
       name: 'Kafka',
       icon: 'kafka.svg',
-      description: 'Use of messaging tools.',
-      level: 'Intermediate',
-      experience: 'Since 2024',
+      description: 'Verwendung von Messaging-Tools.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2024',
       bulletPoints: [
-        'Use of messaging tools.',
+        'Verwendung von Messaging-Tools.',
         'Kafka, Zookeeper.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - Airpharm',
-          description: 'Integration of microservices using Kafka.',
+          description: 'Integration von Microservices mit Kafka.',
           references: [
             ProjectsEnum.APH_CONTROL_TOWER,
             ProjectsEnum.APH_SERVERLESS,
@@ -357,63 +398,32 @@ const skillsDe: {
     {
       name: '.Net',
       icon: 'dotnet.svg',
-      description: '.Net. development of REST APIs.',
-      level: 'Intermediate',
-      experience: 'Since 2025',
+      description: '.Net. Entwicklung von REST APIs.',
+      level: 'Fortgeschritten',
+      experience: 'Seit 2025',
       bulletPoints: [
-        'Development of REST APIs in .Net.',
-        'Integration with SQL databases.',
-        'Implementation of proxies for communication with external services.',
-        'Integration with cloud environments and third-party services.',
-        'Clean architecture.',
-        'Implementation of authentication and authorization.',
-        'Use of version control and project management tools.',
+        'Entwicklung von REST APIs in .Net.',
+        'Integration mit SQL-Datenbanken.',
+        'Implementierung von Proxys zur Kommunikation mit externen Diensten.',
+        'Integration mit Cloud-Umgebungen und Drittanbieter-Diensten.',
+        'Clean Architecture.',
+        'Implementierung von Authentifizierung und Autorisierung.',
+        'Verwendung von Versionskontroll- und Projektmanagement-Tools.',
       ],
-      projectsName: 'Projects',
+      projectsName: 'Projekte',
       projects: [
         {
           type: 'Professional - Airpharm',
-          description: 'Continuation of the backend development of the client portal.',
+          description: 'Fortsetzung der Backend-Entwicklung des Kundenportals.',
           references: [
             ProjectsEnum.APH_CLIENT_PORTAL,
           ],
         },
         {
           type: 'Professional - Airpharm',
-          description: 'Development of multiple REST APIs for obtaining master data (clients, products, orders, and tracking).',
+          description: 'Entwicklung mehrerer REST APIs zur Beschaffung von Stammdaten (Kunden, Produkte, Bestellungen und Tracking).',
           references: [
             ProjectsEnum.APH_REST_APIS,
-          ],
-        },
-      ],
-    },
-    {
-      name: 'Java',
-      icon: 'java.svg',
-      description: 'Development of applications in Java.',
-      level: 'Intermediate',
-      experience: 'Since 2018',
-      bulletPoints: [
-        'Development of applications in Java.',
-        'SpringMVC.',
-        'Hibernate ORM.',
-      ],
-      projectsName: 'Projects',
-      projects: [
-        {
-          type: 'Professional - SVF',
-          description: 'Development of holiday, absence, and calendar control applications with JavaFX.',
-          references: [
-            ProjectsEnum.SVF_ABSENTISM,
-            ProjectsEnum.SVF_PORTAL,
-          ],
-        },
-        {
-          type: 'Professional - SVF',
-          description: 'Development of operations control, management, and mortgage applications with JavaFX.',
-          references: [
-            ProjectsEnum.SVF_MORTGAGE,
-            ProjectsEnum.SVF_AGENDA,
           ],
         },
       ],
