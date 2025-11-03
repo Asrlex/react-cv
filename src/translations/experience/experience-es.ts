@@ -15,13 +15,14 @@ const experienceES: {
       dateEnd: 'Actualidad',
       description: `Desarrollador Full Stack en el equipo de Integrations and Development. Desarrollando sistemas principalmente backend como APIs REST, microservicios, gestión de bases de datos y aplicaciones web.`,
       tasks: [
-        'Desarrollo y mantenimiento de APIs REST y microservicios utilizando NestJS tanto con arquitectura clean como tradicional.',
+        'Desarrollo y mantenimiento de APIs REST y microservicios utilizando SpringBoot MVC y NestJS tanto con arquitectura clean como modular.',
         'Desarrollo de aplicaciones web utilizando Angular y React.',
         'Estandarización de modelos de datos y gestión de bases de datos utilizando SQLServer y OracleDB.',
         'Integración de sistemas con Kafka.',
         'Desarrollo de pipelines de CI/CD utilizando Gitlab CI.',
         'DevOps y gestión de infraestructura utilizando Docker, Kubernetes y Terraform en cloud AWS.',
         'Integración con utilidades AWS como S3, Lambda, Cognito y ECS.',
+        'Gestión de proyectos y coordinación de equipos utilizando metodologías Agile y Jira.',
       ],
     },
     {

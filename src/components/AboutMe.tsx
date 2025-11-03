@@ -3,7 +3,7 @@ import useLangStore, { LangStore } from '@/store/LangStore';
 import { AboutMeInformation } from '@/translations/aboutme/aboutme.translation';
 import '../style/css/aboutme.css';
 import { FaAws, FaMapPin } from "react-icons/fa";
-import { SiApachekafka, SiNestjs, SiPostgresql, SiPython, SiReact, SiTypescript } from "react-icons/si";
+import { SiApachekafka, SiNestjs, SiPostgresql, SiPython, SiReact, SiSpringboot, SiTypescript } from "react-icons/si";
 import { getAboutMeTranslations } from '@/translations/base.translation';
 
 const AboutMe = () => {
@@ -17,6 +17,7 @@ const AboutMe = () => {
         {translation.position}
       </div>
       <div className='aboutMeSection aboutMeTools'>
+        <SiSpringboot className='toolIcon'/>
         <SiTypescript className='toolIcon'/>
         <SiNestjs className='toolIcon'/>
         <SiReact className='toolIcon'/>
