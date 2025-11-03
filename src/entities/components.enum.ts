@@ -89,6 +89,14 @@ export const TechnologiesMaster = {
     name: 'NestJS',
     icon: 'nest'
   },
+  SPRING: {
+    name: 'Spring',
+    icon: 'spring'
+  },
+  GO: {
+    name: 'Go',
+    icon: 'go'
+  },
   TYPESCRIPT: {
     name: 'TypeScript',
     icon: 'typescript'
