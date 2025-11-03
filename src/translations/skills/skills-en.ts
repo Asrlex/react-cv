@@ -128,6 +128,47 @@ const skillsEn: {
         },
       ],
     },
+        {
+      name: 'Java - SpringBoot',
+      icon: 'java.svg',
+      description: 'Development of microservices and applications in Java.',
+      level: 'Intermediate',
+      experience: 'Since 2018',
+      bulletPoints: [
+        'Microservices with SpringBoot MVC and WebFlux.',
+        'REST APIs with SpringBoot MVC.',
+        'Development of applications in Java.',
+        'Hibernate ORM.',
+      ],
+      projectsName: 'Projects',
+      projects: [
+        {
+          type: 'Professional - APH',
+          description: 'Development of REST APIs and microservices with SpringBoot MVC.',
+          references: [
+            ProjectsEnum.APH_CLIENT_PORTAL,
+          ],
+        },
+        {
+          type: 'Personal',
+          description: 'Microservices cluster',
+          references: [
+            ProjectsEnum.PERSONAL_MS_CLUSTER,
+          ],
+        },
+        {
+          type: 'Professional - SVF',
+          description: 'Employee management application, operations control, and mortgage management with JavaFX.',
+          references: [
+            ProjectsEnum.SVF_ABSENTISM,
+            ProjectsEnum.SVF_PORTAL,
+            ProjectsEnum.SVF_MORTGAGE,
+            ProjectsEnum.SVF_AGENDA,
+          ],
+        },
+      ],
+    },
+
     {
       name: 'SQL',
       icon: 'sql.svg',
@@ -383,37 +424,6 @@ const skillsEn: {
           description: 'Development of multiple REST APIs for obtaining master data (clients, products, orders, and tracking).',
           references: [
             ProjectsEnum.APH_REST_APIS,
-          ],
-        },
-      ],
-    },
-    {
-      name: 'Java',
-      icon: 'java.svg',
-      description: 'Development of applications in Java.',
-      level: 'Intermediate',
-      experience: 'Since 2018',
-      bulletPoints: [
-        'Development of applications in Java.',
-        'SpringMVC.',
-        'Hibernate ORM.',
-      ],
-      projectsName: 'Projects',
-      projects: [
-        {
-          type: 'Professional - SVF',
-          description: 'Development of holiday, absence, and calendar control applications with JavaFX.',
-          references: [
-            ProjectsEnum.SVF_ABSENTISM,
-            ProjectsEnum.SVF_PORTAL,
-          ],
-        },
-        {
-          type: 'Professional - SVF',
-          description: 'Development of operations control, management, and mortgage applications with JavaFX.',
-          references: [
-            ProjectsEnum.SVF_MORTGAGE,
-            ProjectsEnum.SVF_AGENDA,
           ],
         },
       ],

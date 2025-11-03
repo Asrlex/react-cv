@@ -55,6 +55,13 @@ const skillsEs: {
           ],
         },
         {
+          type: 'Personal',
+          description: 'Cluster de microservicios.',
+          references: [
+            ProjectsEnum.PERSONAL_MS_CLUSTER,
+          ],
+        },
+        {
           type: 'Profesional - Airpharm',
           description: 'Servicio Web SOAP.',
           references: [
@@ -107,6 +114,13 @@ const skillsEs: {
         },
         {
           type: 'Personal',
+          description: 'Cluster de microservicios.',
+          references: [
+            ProjectsEnum.PERSONAL_MS_CLUSTER,
+          ],
+        },
+        {
+          type: 'Personal',
           description: 'Aplicación web para gestión del hogar (compras, recetas, tareas y finanzas) con ReactTS.',
           references: [
             ProjectsEnum.PERSONAL_HOME_MANAGEMENT,
@@ -137,6 +151,46 @@ const skillsEs: {
           ],
         },
 
+      ],
+    },
+    {
+      name: 'Java - SpringBoot',
+      icon: 'java.svg',
+      description: 'Desarrollo de microservicios y aplicaciones en Java.',
+      level: 'Intermedio',
+      experience: 'Desde 2018',
+      bulletPoints: [
+        'Microservicios con SpringBoot MVC y WebFlux.',
+        'APIs REST con SpringBoot MVC.',
+        'Desarrollo de aplicaciones en Java.',
+        'Hibernate ORM.',
+      ],
+      projectsName: 'Proyectos',
+      projects: [
+        {
+          type: 'Profesional - APH',
+          description: 'Desarrollo de APIs REST y microservicios con SpringBoot MVC.',
+          references: [
+            ProjectsEnum.APH_CLIENT_PORTAL,
+          ],
+        },
+        {
+          type: 'Personal',
+          description: 'Cluster de microservicios.',
+          references: [
+            ProjectsEnum.PERSONAL_MS_CLUSTER,
+          ],
+        },
+        {
+          type: 'Profesional - SVF',
+          description: 'Aplicación de gestión de empleados, control de operaciones, gestorías e hipotecario con JavaFX.',
+          references: [
+            ProjectsEnum.SVF_ABSENTISM,
+            ProjectsEnum.SVF_PORTAL,
+            ProjectsEnum.SVF_MORTGAGE,
+            ProjectsEnum.SVF_AGENDA,
+          ],
+        },
       ],
     },
     {
@@ -393,39 +447,6 @@ const skillsEs: {
           description: 'Desarrollo de múltiples APIs REST para obtención de datos maestros (clientes, productos, pedidos y seguimiento).',
           references: [
             ProjectsEnum.APH_REST_APIS,
-          ],
-        },
-      ],
-    },
-    {
-      name: 'Java',
-      icon: 'java.svg',
-      description: 'Desarrollo de aplicaciones en Java.',
-      level: 'Intermedio',
-      experience: 'Desde 2018',
-      bulletPoints: [
-        'Desarrollo de aplicaciones en Java.',
-        'SpringMVC.',
-        'Hibernate ORM.',
-        'Microservicios con Spring Boot.',
-        'APIs REST con Spring Boot.',
-      ],
-      projectsName: 'Proyectos',
-      projects: [
-        {
-          type: 'Profesional - SVF',
-          description: 'Desarrollo de aplicaciones de control de vacaciones, ausencias y calendario con JavaFX.',
-          references: [
-            ProjectsEnum.SVF_ABSENTISM,
-            ProjectsEnum.SVF_PORTAL,
-          ],
-        },
-        {
-          type: 'Profesional - SVF',
-          description: 'Aplicación de control de operaciones, gestorías e hipotecario con JavaFX.',
-          references: [
-            ProjectsEnum.SVF_MORTGAGE,
-            ProjectsEnum.SVF_AGENDA,
           ],
         },
       ],

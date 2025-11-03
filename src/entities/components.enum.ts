@@ -48,6 +48,7 @@ export enum ProjectsEnum {
   SVF_ABSENTISM = 'absentism-project',
   SVF_MORTGAGE = 'mortgage-project',
   SVF_AGENDA = 'agenda-project',
+  PERSONAL_MS_CLUSTER = 'ms-cluster-project',
   PERSONAL_HOME_MANAGEMENT = 'home-management-project',
   PERSONAL_HM_CONTROL_TOWER = 'hm-control-tower-project',
   PERSONAL_TRAVEL_JOURNAL = 'travel-journal-project',
